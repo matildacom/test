@@ -12,7 +12,7 @@ img{
 .about{
     padding-top: 60px;
     padding-bottom: 60px;
-background-color:  #FFF5F6;;
+    background-color:  #FFF5F6;;
 }
 .container {
     padding-left: 20px;
@@ -25,13 +25,11 @@ background-color:  #FFF5F6;;
         width: 320px;
     }
 }
-
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
 }
-
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
@@ -47,6 +45,12 @@ background-color:  #FFF5F6;;
     color: rgb(255, 165, 186);
     text-align: center;
     margin-bottom: 15px;
+    @media screen and (min-width: 768px){
+        font-size: 26px;  
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;  
+    }
 }
 
 .about__title {
@@ -60,13 +64,40 @@ background-color:  #FFF5F6;;
     text-transform: uppercase;
     color: rgb(212, 20, 67);
     text-align: center;
+
+    @media screen and (min-width: 768px){
+        font-size: 48px;  
+        width: 429px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px; 
+        width: 534px; 
+    }
+   }
+   .about__box{
+    margin-top: 32px;
+    @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;  
+        }
+    @media screen and (min-width: 1200px) {
+         display: flex;  
+        }
+    }
    
-}
 .about__image{
     display: block;
     max-width: 280px;
     height: 279px;
-    margin-top: 32px;
+   margin-right: 32px;
+   @media screen and (min-width: 768px) {
+    max-width: 336px;
+    height: 335px;
+  }
+@media screen and (min-width: 1200px) {
+    max-width: 501px;
+    height: 501px; 
+  }
 }
 .about__text{
     font-family: DM Sans;
@@ -89,5 +120,17 @@ background-color:  #FFF5F6;;
     margin-bottom: 20px;
 }
 .about__button{
-
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    color: #D41443;
+    background-color: blue;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
 }
