@@ -1,34 +1,64 @@
-/*.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+/*h1, h2, h3, p{
+    margin: 0;
 }
 
-@media screen and (min-width: 320px) {
-    .container {
-        width: 320px;
+img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:  #FFF5F6;
+
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    background-size: contain;
+    background-image:url(../images/background-pic_sm.png);
+
+    @media screen and (min-width: 768px){
+      background-image: none;    
+    }
+    @media screen and (min-width: 1200px) {
+       background-image: url(../images/background-pic_lg.png); 
+       background-position-y: 90%;  
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    @include device($mobile) {
+      width: $mobile;
     }
-}
+    @include device($tablet) {
+      width: $tablet;
+      padding: 0 32px;
+    }
+    @include device($desktop) {
+      width: $desktop;
+      padding: 0 16px;
+    }
+  }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
 
 .about__pretitle {
     font-family: Titan One;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.14;
+    text-transform: uppercase;
     color: rgb(255, 165, 186);
+    text-align: center;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px){
+        font-size: 26px;  
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;  
+    }
 }
 
 .about__title {
@@ -36,6 +66,141 @@
     font-size: 34px;
     font-weight: 400;
     line-height: 1.14;
+    width: 200px;
+    
+    margin: auto;
+    text-transform: uppercase;
     color: rgb(212, 20, 67);
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+        font-size: 48px;  
+        width: 429px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px; 
+        width: 534px; 
+    }
+   }
+   .about__box{
+    margin-top: 32px;
+    @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;  
+        }
+    @media screen and (min-width: 1200px) {
+         display: flex;  
+        }
+    }
+   
+.about__image{
+    display: block;
+    max-width: 280px;
+    height: 279px;
+   margin-right: 32px;
+   @media screen and (min-width: 768px) {
+    max-width: 336px;
+    height: 335px;
+  }
+@media screen and (min-width: 1200px) {
+    max-width: 501px;
+    height: 501px; 
+    margin-right: 99px;
+  }
 }
 
+.about__text{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #000000;
+    width: 220px;
+    
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;  
+        width: 334px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px; 
+        width: 463px; 
+    }
+}
+.about__description{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    color:  #907E82;
+    width: 220px;
+    
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;  
+        width: 334px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px; 
+        width: 463px; 
+    }
+}
+.about__paragraph{
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    color:  blueviolet;
+    width: 220px;
+    
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;  
+        width: 334px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px; 
+        width: 463px;
+        margin-bottom: 40px; 
+    }
+}
+.about__button{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D41443;
+    background-color:#FFFFFF;
+    width: 176px;
+    height: 44px;
+    //border-radius: 22px;
+    border: navy;
+    cursor: pointer;
+
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+    &:hover,
+    &:focus{
+        background: #000000;
+        color: #474747;
+        
+        box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.12);
+    }
+
+.icon__arrow{
+    margin-left: 13.62px;
+}}
+
+
+
+
+
+
+ 
